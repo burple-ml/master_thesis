@@ -1,0 +1,49 @@
+------------------------
+BaselineCorrectedData2.mat
+Error_3195457.err
+HPCScript.sh
+Output_3195457.out
+ShallowNetwork_Optimisation.py
+-----------------------
+<class 'numpy.ndarray'> float64
+[[1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]]
+(20, 1)
+<class 'numpy.ndarray'> uint8
+(80, 1001)
+(80, 1)
+[1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0
+ 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0
+ 0 0 0 0 0 0]
+(80, 1002)
+Final X shape: (80, 1001)
+The Y's finally after shuffling: [0 1 1 1 0 1 0 1 1 0 0 0 1 0 1 1 0 1 1 1 1 1 1 0 0 0 0 1 0 1 1 1 1 0 1 1 0
+ 0 1 0 1 0 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 1 1 1 0 1 0 1 1 0 1 1 0 1 1 1 1
+ 0 1 1 0 0 0] uint8
+(80, 1, 1001) (80,)
+<class 'skorch.classifier.NeuralNetClassifier'>[uninitialized](
+  module=<class '__main__.Net'>,
+  module__kernel_size_conv1=10,
+  module__num_units=2,
+  module__stride_conv1=1,
+)
+Fitting 5 folds for each of 1000 candidates, totalling 5000 fits
+0.9375 {'optimizer__weight_decay': 0.01, 'module__stride_conv1': 17, 'module__num_units': 2, 'module__kernel_size_conv1': 12}

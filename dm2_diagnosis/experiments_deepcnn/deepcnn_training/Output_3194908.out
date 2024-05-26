@@ -1,0 +1,150 @@
+------------------------
+DEEP_CNN_TRAINEDMODEL
+DEEP_CNN_Trainer.py
+Data_Augmentator.py
+Error_3194908.err
+HPCScript.sh
+ImportantPlots
+ImportantVariables
+LR-Raman
+Output_3194908.out
+Raman_Reader.py
+-----------------------
+Hi
+Shape of Raman Shifts--> (701,) First 2 and Last Raman shifts---> 150.0 151.9285 1499.95
+1862
+everything upto here is done (6200,)
+The shape of Ramandata_Raw_final is: (6200, 701)
+(38, 701)
+The name of the mineral is :  Grossular
+
+----------------------------------------------------
+(3763, 701) (3763,)
+653
+Spectrums removed and saved
+--------------------------------------------------
+(3763, 701) (3763,)
+(3763, 701) (3763, 1)
+[ 179.  165.  317. ...,  649.  450.  175.] (3763,) (3763, 701)
+(653,)
+(653, 701)
+(3110, 701) (3110,)
+Training and test sets made and data saved
+-------------------------------------------
+Class Proportions shown and figure saved
+-------------------------------------------
+Time for some Data Augmentation
+The original shapes and types are as follows
+(6200, 701) (6200,)
+(3763, 701) (3763,)
+(3110, 701) (3110,) float64 float64
+[-15 -14 -13 -12 -11 -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   1   2   3
+   4   5   6   7   8   9  10  11  12  13  14]
+[-15 -14 -13 -12 -11 -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   1   2   3
+   4   5   6   7   8   9  10  11  12  13  14]
+[-15 -14 -13 -12 -11 -10  -9  -8  -7  -6  -5  -4  -3  -2  -1   1   2   3
+   4   5   6   7   8   9  10  11  12  13  14]
+The shape after first augmentation are as follows
+(12440, 701) (12440,)
+-------
+The shapes after data augmentation are as follows
+(21770, 701) (21770,)
+------
+(21770, 701) (21770,)
+(21770, 701) (21770, 1)
+[ 245.  366.  279. ...,  301.  487.  193.] (21770,) (21770, 701)
+DATA IS SHUFFLED AND AUGMENTED
+------------------------------------------
+(21770, 701)
+(21770,)
+(653, 701)
+(653,)
+(21770, 701) (653, 701)
+DATA IS NORMALISED AND READY FOR TRAINING
+DATA IS ALSO SAVED
+-------------------------------------------------
+step completed
+(21770, 701)
+Information on dataset
+x_train (21770, 1, 701)
+targets_train (21770,)
+x_valid (653, 1, 701)
+targets_valid (653,)
+x_train shape[1] 1
+x_train shape[2] 701
+DATA RESHAPED
+--------------
+Net(
+  (conv_1): Conv1d(1, 16, kernel_size=(21,), stride=(1,))
+  (conv_1_bn): BatchNorm1d(16, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (maxpool_1): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv_2): Conv1d(16, 32, kernel_size=(11,), stride=(1,))
+  (conv_2_bn): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (maxpool_2): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv_3): Conv1d(32, 64, kernel_size=(5,), stride=(1,))
+  (conv_3_bn): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (maxpool_3): MaxPool1d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (l_1): Linear(in_features=5120, out_features=2048, bias=True)
+  (l_1_bn): BatchNorm1d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (l_out): Linear(in_features=2048, out_features=653, bias=True)
+  (l_2_bn): BatchNorm1d(653, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (dropout1d): Dropout(p=0.5)
+)
+torch.Size([5, 653]) tensor([[0.0027, 0.0009, 0.0009,  ..., 0.0013, 0.0006, 0.0029],
+        [0.0021, 0.0089, 0.0022,  ..., 0.0012, 0.0027, 0.0012],
+        [0.0028, 0.0006, 0.0017,  ..., 0.0012, 0.0027, 0.0013],
+        [0.0002, 0.0011, 0.0014,  ..., 0.0015, 0.0013, 0.0006],
+        [0.0010, 0.0008, 0.0008,  ..., 0.0013, 0.0006, 0.0013]],
+       grad_fn=<SoftmaxBackward>)
+The forward pass is working just fine
+---------------TRAINING STARTS---------------
+Epoch  1 : Train Loss 0.006461 , Train acc 0.136380, Valid acc 0.081164
+Epoch  2 : Train Loss 0.006379 , Train acc 0.289389, Valid acc 0.206738
+Epoch  3 : Train Loss 0.006306 , Train acc 0.360450, Valid acc 0.255743
+Epoch  4 : Train Loss 0.006250 , Train acc 0.400689, Valid acc 0.281776
+Epoch  5 : Train Loss 0.006209 , Train acc 0.436977, Valid acc 0.306279
+Epoch  6 : Train Loss 0.006174 , Train acc 0.467800, Valid acc 0.329250
+Epoch  7 : Train Loss 0.006144 , Train acc 0.496233, Valid acc 0.353752
+Epoch  8 : Train Loss 0.006115 , Train acc 0.519384, Valid acc 0.366003
+Epoch  9 : Train Loss 0.006088 , Train acc 0.539320, Valid acc 0.381317
+Epoch 10 : Train Loss 0.006060 , Train acc 0.559945, Valid acc 0.392037
+Epoch 11 : Train Loss 0.006034 , Train acc 0.575838, Valid acc 0.401225
+Epoch 12 : Train Loss 0.006008 , Train acc 0.591043, Valid acc 0.404288
+Epoch 13 : Train Loss 0.005984 , Train acc 0.603721, Valid acc 0.408882
+Epoch 14 : Train Loss 0.005962 , Train acc 0.618787, Valid acc 0.415008
+Epoch 15 : Train Loss 0.005942 , Train acc 0.630593, Valid acc 0.421133
+Epoch 16 : Train Loss 0.005924 , Train acc 0.640469, Valid acc 0.422665
+Epoch 17 : Train Loss 0.005907 , Train acc 0.651860, Valid acc 0.436447
+Epoch 18 : Train Loss 0.005892 , Train acc 0.661001, Valid acc 0.436447
+Epoch 19 : Train Loss 0.005877 , Train acc 0.672301, Valid acc 0.441041
+Epoch 20 : Train Loss 0.005864 , Train acc 0.682637, Valid acc 0.439510
+Epoch 21 : Train Loss 0.005850 , Train acc 0.691135, Valid acc 0.437979
+Epoch 22 : Train Loss 0.005838 , Train acc 0.699770, Valid acc 0.442573
+Epoch 23 : Train Loss 0.005825 , Train acc 0.707074, Valid acc 0.441041
+Epoch 24 : Train Loss 0.005815 , Train acc 0.715939, Valid acc 0.448698
+Epoch 25 : Train Loss 0.005805 , Train acc 0.722324, Valid acc 0.447167
+Epoch 26 : Train Loss 0.005795 , Train acc 0.728525, Valid acc 0.451761
+Epoch 27 : Train Loss 0.005786 , Train acc 0.734589, Valid acc 0.451761
+Epoch 28 : Train Loss 0.005777 , Train acc 0.739550, Valid acc 0.456355
+Epoch 29 : Train Loss 0.005769 , Train acc 0.745338, Valid acc 0.451761
+Epoch 30 : Train Loss 0.005763 , Train acc 0.751952, Valid acc 0.454824
+Epoch 31 : Train Loss 0.005756 , Train acc 0.757097, Valid acc 0.454824
+Epoch 32 : Train Loss 0.005749 , Train acc 0.762242, Valid acc 0.460949
+Epoch 33 : Train Loss 0.005742 , Train acc 0.770096, Valid acc 0.460949
+Epoch 34 : Train Loss 0.005735 , Train acc 0.777079, Valid acc 0.459418
+Epoch 35 : Train Loss 0.005728 , Train acc 0.782131, Valid acc 0.457887
+Epoch 36 : Train Loss 0.005721 , Train acc 0.786449, Valid acc 0.464012
+Epoch 37 : Train Loss 0.005714 , Train acc 0.792513, Valid acc 0.460949
+Epoch 38 : Train Loss 0.005709 , Train acc 0.797336, Valid acc 0.465544
+Epoch 39 : Train Loss 0.005702 , Train acc 0.803767, Valid acc 0.462481
+Epoch 40 : Train Loss 0.005696 , Train acc 0.809141, Valid acc 0.465544
+Epoch 41 : Train Loss 0.005690 , Train acc 0.814653, Valid acc 0.467075
+Epoch 42 : Train Loss 0.005683 , Train acc 0.818282, Valid acc 0.467075
+Epoch 43 : Train Loss 0.005678 , Train acc 0.823335, Valid acc 0.470138
+Epoch 44 : Train Loss 0.005673 , Train acc 0.826550, Valid acc 0.468606
+Epoch 45 : Train Loss 0.005668 , Train acc 0.829720, Valid acc 0.470138
+Epoch 46 : Train Loss 0.005663 , Train acc 0.833395, Valid acc 0.470138
+Epoch 47 : Train Loss 0.005659 , Train acc 0.838172, Valid acc 0.474732
+Epoch 48 : Train Loss 0.005654 , Train acc 0.843500, Valid acc 0.474732
+Epoch 49 : Train Loss 0.005650 , Train acc 0.847588, Valid acc 0.477795
+Epoch 50 : Train Loss 0.005645 , Train acc 0.851217, Valid acc 0.474732

@@ -1,0 +1,15 @@
+Loaded module: python3/3.6.2
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 10 concurrent workers.
+[Parallel(n_jobs=-1)]: Done  30 tasks      | elapsed:   17.9s
+[Parallel(n_jobs=-1)]: Done 180 tasks      | elapsed:  1.4min
+[Parallel(n_jobs=-1)]: Done 430 tasks      | elapsed:  3.4min
+[Parallel(n_jobs=-1)]: Done 780 tasks      | elapsed:  6.1min
+[Parallel(n_jobs=-1)]: Done 1230 tasks      | elapsed:  9.5min
+[Parallel(n_jobs=-1)]: Done 1780 tasks      | elapsed: 13.9min
+[Parallel(n_jobs=-1)]: Done 2430 tasks      | elapsed: 18.9min
+[Parallel(n_jobs=-1)]: Done 3180 tasks      | elapsed: 24.7min
+[Parallel(n_jobs=-1)]: Done 4030 tasks      | elapsed: 31.5min
+[Parallel(n_jobs=-1)]: Done 4980 tasks      | elapsed: 39.0min
+[Parallel(n_jobs=-1)]: Done 5000 out of 5000 | elapsed: 39.1min finished
+/zhome/09/5/113937/.local/lib/python3.6/site-packages/sklearn/model_selection/_search.py:813: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
